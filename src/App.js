@@ -1,4 +1,4 @@
-import { HomePage } from './homePage.Component';
+import { HomePage } from './pages/homepage/homepage.component.jsx';
 import './App.css';
 function App() {
   return (
@@ -7,5 +7,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
