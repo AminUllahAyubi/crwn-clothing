@@ -10,6 +10,9 @@
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    & .background-image{
+        transition: all 4s;
+    }
     &:hover{
         cursor: pointer;
         & .background-image{
