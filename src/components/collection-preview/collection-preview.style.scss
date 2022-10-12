@@ -1,0 +1,14 @@
+.collection-preview{
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-bottom: 30px;
+    .title{
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    .preview{
+        display: grid;
+        grid-template-columns:auto auto auto auto;
+        justify-content: space-between;
+    }
+}

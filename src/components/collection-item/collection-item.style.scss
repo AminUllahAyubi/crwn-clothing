@@ -1,0 +1,27 @@
+.collection-item{
+    padding: 0 5px;
+    width: 300px;
+    display: grid;
+    grid-template-rows:90% 10%;
+    height: 350px;
+    .image{
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 5px;
+    }
+    .collection-footer{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        padding: 0 5px;
+        border-right: 1px solid rgb(173, 173, 173);
+        border-bottom: 1px solid rgb(173, 173, 173);
+        // box-shadow: 1px 1px 0px 1px black;
+        .name{
+            margin-bottom: 15px;
+        }
+        .price{
+            margin-bottom: 15px;
+        }
+    }
+}
