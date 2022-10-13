@@ -4,6 +4,7 @@
     display: grid;
     grid-template-rows:90% 10%;
     height: 350px;
+    margin-bottom: 15px;
     .image{
         background-size: cover;
         background-position: center;
@@ -14,8 +15,8 @@
         grid-template-columns: auto auto;
         justify-content: space-between;
         padding: 0 5px;
-        border-right: 1px solid rgb(173, 173, 173);
-        border-bottom: 1px solid rgb(173, 173, 173);
+        border-right: 2px solid rgb(139, 139, 139);
+        border-bottom: 2px solid rgb(139, 139, 139);
         // box-shadow: 1px 1px 0px 1px black;
         .name{
             margin-bottom: 15px;

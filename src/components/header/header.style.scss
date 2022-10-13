@@ -1,0 +1,19 @@
+.header{
+    height: 70px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between; 
+    align-items: center;
+    .logo-container{
+        height: 100%;
+    }
+    .options{
+        height: 100%;
+        display:grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        grid-gap: 5px;
+    }
+    .option{
+    }
+}
