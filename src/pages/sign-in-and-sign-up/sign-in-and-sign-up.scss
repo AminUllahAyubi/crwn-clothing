@@ -1,0 +1,17 @@
+@media(min-width:0px){
+
+
+.sign-in-and-sign-up{
+    display: grid;
+    grid-template-rows:auto;
+    justify-content: space-around;
+    grid-gap: 140px;
+}
+}
+@media(min-width:800px){
+.sign-in-and-sign-up{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+}

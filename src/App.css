@@ -1,5 +1,7 @@
 body{
     padding: 20px 60px;
+    outline: none;
+    border: none;
 }
 a{
     text-decoration: none;

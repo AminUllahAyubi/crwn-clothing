@@ -1,0 +1,24 @@
+.sign-in {
+    min-width: 30vw;
+    height: 340px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    .title {
+        margin: 10px 0;
+    }
+    @media (min-width:800px) {
+        .custom-buttons {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 5px;
+        }
+    }
+    @media(min-width:0px){
+        
+    .custom-buttons{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5px;
+    }
+    }
+}
