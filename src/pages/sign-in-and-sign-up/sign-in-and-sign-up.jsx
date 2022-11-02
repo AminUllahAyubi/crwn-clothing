@@ -1,7 +1,7 @@
 
 import React from "react";
 import SignIn from "../../components/sign-in/sign-in.component";
-import SignOut from "../../components/sign-out/sign-out.component";
+import SignOut from "../../components/sign-up/sign-out.component";
 import './sign-in-and-sign-up.scss';
 const SignInAndSignUpPage=()=>{
     return(

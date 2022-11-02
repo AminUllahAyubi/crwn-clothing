@@ -6,19 +6,18 @@
     .title {
         margin: 10px 0;
     }
-    @media (min-width:800px) {
+    @media (min-width:0px) {
+        .custom-buttons {
+            display: grid;
+            grid-template-columns:  auto;
+            grid-gap: 5px;
+        }
+    }
+    @media (min-width:1000px) {
         .custom-buttons {
             display: grid;
             grid-template-columns: auto auto;
             grid-gap: 5px;
         }
-    }
-    @media(min-width:0px){
-        
-    .custom-buttons{
-        display: grid;
-        grid-template-columns: auto;
-        grid-gap: 5px;
-    }
     }
 }

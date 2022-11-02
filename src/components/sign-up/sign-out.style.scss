@@ -1,8 +1,14 @@
-.sign-out{
+.sign-up{
     min-width: 30vw ;
     display: grid;
     grid-template-rows:auto auto auto ;
     .title{
         margin: 10px 0;
     }
-}    
+    .button{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+}
