@@ -1,0 +1,22 @@
+.cart{
+    position: absolute;
+    width: 240px;
+    height: 340px;
+    display: grid;
+    grid-template-rows: auto auto ;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: white;
+    top: 80px;
+    right: 30px;
+    z-index: 5;
+
+    .cart-items{
+        height: 240px;
+        display: grid;
+        overflow: scroll;
+    }
+    button{
+        margin-top: auto;
+    }
+}

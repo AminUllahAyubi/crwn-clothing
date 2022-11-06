@@ -1,0 +1,41 @@
+[33mcommit d782accef0b1d92549fb5bf11026f1abb8bbe21f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: amin ullah ayubi <aminayubi212@gmail.com>
+Date:   Wed Nov 2 21:14:37 2022 +0430
+
+    added redux, and implemented userReducer and userActions to header and app components:
+
+[33mcommit 80dceed2999a5bcb405aa0a2036ddbe862a934ab[m
+Author: amin ullah ayubi <aminayubi212@gmail.com>
+Date:   Tue Oct 18 22:03:04 2022 +0430
+
+    integrated firebase into application, created sign in page with sign in component and sign in with google
+
+[33mcommit 74437116b788733dc25ad5e8aa77406563249c73[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: amin ullah ayubi <aminayubi212@gmail.com>
+Date:   Thu Oct 13 07:07:49 2022 +0430
+
+    add header component adn links to home, shop page adn contact
+
+[33mcommit 6d9c79fac98a20fee48f2a461551e020cef94f78[m
+Author: amin ullah ayubi <aminayubi212@gmail.com>
+Date:   Wed Oct 12 13:09:03 2022 +0430
+
+    updating our app with a shop page, collection preview component and collection item component
+
+[33mcommit 7dcffd7d9c2e197f6d20d1dc0cbd13fc90dce023[m
+Author: amin ullah ayubi <aminayubi212@gmail.com>
+Date:   Mon Oct 10 13:38:32 2022 +0430
+
+    update our menu-item to navigate with useNavigate hook
+
+[33mcommit aab2846298b2a692c4e38bacb438f70e294b22c9[m
+Author: amin ullah ayubi <aminayubi212@gmail.com>
+Date:   Thu Oct 6 18:31:15 2022 +0430
+
+    broken our homepage into smaller components,finished styleing menu-item component
+
+[33mcommit 3272a23a0243f14f0290fa2b0b0762d7f6c12f8b[m[33m ([m[1;31morigin1/master[m[33m)[m
+Author: amin ullah ayubi <aminayubi212@gmail.com>
+Date:   Tue Oct 4 20:34:20 2022 +0430
+
+    created project with create react app and added files for homepage

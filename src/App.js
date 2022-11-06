@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter,Navigate} from "react-router-dom";
 import { HomePage } from './pages/homepage/homepage.component.jsx';
 import Shop from "./pages/shop/shop.component.jsx";
 import Header from "./components/header/header.component.jsx";
@@ -26,7 +26,6 @@ class App extends React.Component {
         this.props.setCurrentUser(userAuth)
       }
     })
-    
   }
   componentWillUnmount(){
       this.unsubscrieFromAuth();
@@ -38,7 +37,15 @@ class App extends React.Component {
          <Routes>
           <Route path='/' element={<HomePage />}></Route>
           <Route path='/shop' element={<Shop />}></Route>
-          <Route path='/signin' element={<SignInAndSignUpPage />}></Route>
+          <Route path='/signin' 
+            element={
+              (
+                this.props.currentUser?
+                <Navigate to="/"/>
+                :<SignInAndSignUpPage></SignInAndSignUpPage>
+              )
+          }
+          ></Route>
         </Routes>
       </BrowserRouter>
     )
@@ -49,7 +56,7 @@ const mapDispatchToProps=(dispatch)=>({
 })
 const mapStateToProps=(state)=>{
   return{
-    currentUser:state.user.currentUser
+    currentUser:state.user.currentUser,
   }
 }
 export default connect(mapStateToProps,mapDispatchToProps)(App);
