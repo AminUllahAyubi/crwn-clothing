@@ -8,8 +8,7 @@ import Cart from '../cart/cart.component'
 const Header = ({ currentUser,cart }) => {
     console.log(cart.hidden)
     return (
-        <div className="header">
-            
+        <div className="header">            
             <Link to='/' className="logo-container">
                 <img src='../../../images/IMG_20221012_140641.png' alt='logo' width={100}></img>
             </Link>

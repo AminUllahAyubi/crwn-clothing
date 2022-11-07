@@ -3,7 +3,6 @@ import CustomButton from "../custom-button/custom-button.component";
 import { connect } from "react-redux";
 import { addItem } from "../../redux/cart/cart-action";
 import './collection-item.style.scss';
-
 const CollectionItem=({item,addItem,cartItems})=>{
     const {name,price,imageUrl}=item;
     return(
@@ -15,7 +14,7 @@ const CollectionItem=({item,addItem,cartItems})=>{
                 }}
             >
             </div>
-            <CustomButton onClick={()=>{addItem(item);console.log(cartItems[0])}}>ADD CART</CustomButton>
+            <CustomButton onClick={()=>{addItem(item);}}>ADD CART</CustomButton>
             <div className="collection-footer">
                 <span className="name">{name}</span>
                 <span className="price">{price}</span>
