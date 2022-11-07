@@ -1,10 +1,24 @@
 .collection-item{
+    position: relative;
     padding: 0 5px;
     width: 300px;
     display: grid;
     grid-template-rows:90% 10%;
     height: 350px;
     margin-bottom: 15px;
+    button{
+        position: absolute;
+        top:80%;
+        left: 50%;
+        transform: translate(-50%,-80%);
+        width: 80%;
+        visibility: hidden;
+        background-color: white;
+        color: black;
+        opacity: .85;
+        font-size: 15px;
+        font-weight: 500;
+    }
     .image{
         background-size: cover;
         background-position: center;
@@ -17,7 +31,6 @@
         padding: 0 5px;
         border-right: 2px solid rgb(139, 139, 139);
         border-bottom: 2px solid rgb(139, 139, 139);
-        // box-shadow: 1px 1px 0px 1px black;
         .name{
             margin-bottom: 15px;
         }
@@ -26,3 +39,15 @@
         }
     }
 }
+.collection-item:hover{
+    .image{
+        opacity: .8;
+    }   
+    button{
+        visibility: visible;
+        &:hover{
+            background-color: black;
+            color: white;
+        }   
+    }       
+}           

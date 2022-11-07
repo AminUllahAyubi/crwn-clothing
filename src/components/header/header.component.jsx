@@ -31,7 +31,7 @@ const Header = ({ currentUser,cart }) => {
                 }
                 <CartIcon/>
             </div>
-            {cart.hidden?<Cart/>:''}
+            {cart.hidden?<Cart/>:null}
         </div>
     );
 }

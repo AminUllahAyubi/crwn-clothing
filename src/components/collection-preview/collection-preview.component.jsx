@@ -13,7 +13,7 @@ const CollectionPreview=({title,items})=>{
                         return (
                             <CollectionItem
                                 key={item.id}
-                                 {...item}
+                                 item={item}
                             />
                         )
                     })
