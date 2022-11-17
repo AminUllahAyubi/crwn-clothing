@@ -11,6 +11,11 @@
     right: 30px;
     z-index: 5;
 
+    .empty-message{
+        font-size: 18px;
+        margin: 60px auto ;
+        text-transform: capitalize;
+    }
     .cart-items{
         height: 240px;
         display: grid;

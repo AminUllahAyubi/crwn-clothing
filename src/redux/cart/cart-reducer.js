@@ -15,7 +15,8 @@ const cartReducer = (state = defaultState, action) => {
         case cartTypes.ADD_ITEM:
             return {
                 ...state,
-                cartItems: addItemToCart(state.cartItems,action.payload)
+                cartItems: addItemToCart(state.cartItems,action.payload),
+                // quantity:state.quantity+1
             }
         default:
             return state
