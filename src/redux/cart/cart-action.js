@@ -10,3 +10,15 @@ export const addItem=(item)=>{
         payload:item
     }
 }
+export const removeItem=(item)=>{
+    return{
+        type:cartTypes.REMOVE_ITEM,
+        removeItem:item
+    }
+}
+export const decreaseItem=(item)=>{
+    return{
+        type:cartTypes.DECREASE_ITEM,
+        payload:item
+    }
+}

@@ -1,5 +1,5 @@
 .checkout-page{
-    width: 55%;
+    width: 70%;
     min-height: 90vh;
     display: flex;
     flex-direction:column;
@@ -41,12 +41,30 @@
                 width: 20%;
                 text-align: center;
                 margin: auto;
+                img{
+                    border-radius: 3px;
+                    transition: all .2s;
+                }
+                & img:hover{
+                    transform: scale(1.03);
+                    transition: all .1s;
+                    box-shadow: 0 0 7px 0 black;
+                    border-radius: 3px;
+                }
                 &:first-child{
                     text-align: left;
                 }
                 &:last-child{
                     text-align: right;
                     padding-right: 20px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                .arrow{
+                    cursor: pointer;
+                    display: inline-block;
+                    margin: 0 4px;
                 }   
             }
         }
