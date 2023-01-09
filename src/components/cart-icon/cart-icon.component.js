@@ -9,7 +9,12 @@ const CartIcon = (props) => {
     return (
         <div className="cart-icon" onClick={props.toggleCartHidden}>
             <ShoppingIcon className="shopping-icon"></ShoppingIcon>
-            <span className="item-count">{props.itemCount}</span>
+            <span className="item-count">
+                {
+                    props.itemCount>99?<>99<span className="greater_then_99"><span>+</span></span></>:
+                    <span className="less_then_99">{props.itemCount}</span>
+                }
+            </span>
         </div>
     )
 }

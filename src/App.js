@@ -11,6 +11,7 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "./redux/user/user.selectors.js"; 
 import CheckoutPage from "./components/checkout/checkout.component.jsx";
+import CollectionPage from "./pages/category/collection.component";
 class App extends React.Component {
   unsubscrieFromAuth=null;
   componentDidMount(){
@@ -39,7 +40,8 @@ class App extends React.Component {
         <Header></Header>
          <Routes>
           <Route path='/' element={<HomePage />}></Route>
-          <Route path='/shop' element={<Shop />}></Route>
+          <Route path='/shop' element={<Shop />}/>
+          <Route path='/shop/:id' element={<CollectionPage/>}/>
           <Route path='/checkout' element={<CheckoutPage/>}></Route>
           <Route path='/signin' 
             element={

@@ -12,7 +12,9 @@ const Header = ({ currentUser,hidden }) => {
     return (
         <div className="header">            
             <Link to='/' className="logo-container">
-                <img src='../../../images/IMG_20221012_140641.png' alt='logo' width={100}></img>
+                <img src='../../../images/IMG_20221012_140641.png' alt='logo' ></img>
+                {/* <img src='../../../images/4.2 favicon.ico.ico' alt='logo' ></img> */}
+            
             </Link>
             <div className="options">
                 <Link className="option" to='/shop'>
